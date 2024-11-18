@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #343a40;
+}
+div.body {
+    align-items: center;
+    align-content: center;
+}
+.F-side {
+    height: 180px;
+}
+span {
+    color: orange;
+}
+.span {
+    color: orange;
+}
+del {
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+    color: rgba(255, 255, 255, 0.521);
+}
+.s-inside div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    cursor: grab;
+    background-color: black;
+    font-weight: bolder;
+}
+.bg-img {
+    background-image: url(image/bg-furniture-img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 350px;
+    position: relative;
+}
+.box-icon {
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    left: -450px;
+}
+.box-icon:nth-child(1) {
+    margin-top: 50px;
+}
+.box-icon:nth-child(2) {
+    top: 155px;
+    left: 340px;
+}
+.box-icon:nth-child(3){
+    top: 40px;
+    left: 30px;
+}
+.box-icon:nth-child(4){
+    top: 215px;
+    left: 20px;
+}
+.box-icon:hover{
+    transform: rotate(-135deg);
+    transition-duration: 1s;
+}
+.s-inside div:hover {
+    color: orange;
+    filter: contrast(1.2);
+    background-size: cover;
+    background-position: bottom;
+}
+.s-inside div:nth-child(1):hover {
+    transform: scale(1.15,1.15);
+    transition: 2s;
+    background-image: url(image/interior-image-1.jpg);
+    background-position: bottom;
+}
+.s-inside div:nth-child(2):hover {
+    transform: scale(1.15,1.15);
+    transition: 2s;
+    background-image: url(image/home-interior-image-2.jpg);
+    background-size: cover;
+}
+.s-inside div:nth-child(3):hover {
+    transform: scale(1.15,1.15);
+    transition: 2s;
+    background-image: url(image/HomePage-Section-2-img1.jpg);
+    background-size: cover;
+    /* background-position: bottom; */
+}
+.s-inside div:nth-child(4):hover {
+    transform: scale(1.15,1.15);
+    transition: 2s;
+    background-image: url(image/exterior-image2.jpg);
+    background-size: cover;
+}
+.s-inside div:nth-child(5):hover {
+    transform: scale(1.15,1.15);
+    transition: 2s;
+    background-image: url(image/exterior-image1.jpg);
+    background-size: cover;
+}

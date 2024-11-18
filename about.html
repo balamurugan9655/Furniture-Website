@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furnitures</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="image/sofa-icon.png">
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body style="background-color: #212529;color: white;">
+    <!-- navbar -->
+    <nav class="navbar position-fixed w-100 navbar-expand-lg bg-black bg-opacity-75" style="z-index: 100;">
+        <div class="container-fluid ms-md-5">
+          <a class="navbar-brand text-warning" href="#">Furnitures</a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse container navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 ms-md-5 mb-lg-0">
+              <li class="nav-item ms-md-5 me-md-2">
+                <a class="nav-link text-white" aria-current="page" href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill span" viewBox="0 0 16 16" style="vertical-align: text-bottom;">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                  </svg> 
+                  Home</a>
+              </li>
+              <li class="nav-item ms-md-2 me-md-2">
+                <a class="nav-link text-white" href="about.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-vcard-fill span" viewBox="0 0 16 16" style="vertical-align: text-bottom;">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
+                      </svg> 
+                      About US</a>
+              </li>
+              <li class="nav-item dropdown ms-md-2 me-md-2">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-collection-fill span" viewBox="0 0 16 16" style="vertical-align: text-bottom;">
+                        <path d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1"/>
+                      </svg>
+                  Collection
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="collection.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-return-right span" viewBox="0 0 16 16" style="vertical-align: text-bottom;">
+                        <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5"/>
+                      </svg>
+                       Indoor Furnitures</a></li>
+                  <li><a class="dropdown-item" href="collection.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-return-right span" viewBox="0 0 16 16" style="vertical-align: text-bottom;">
+                        <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5"/>
+                      </svg>
+                       Outdoor Furnitures</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="collection.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-shop span" viewBox="0 0 16 16" style="vertical-align: text-bottom;">
+                        <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"/>
+                      </svg>
+                       Shop</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ms-md-2 me-md-2">
+                <a class="nav-link text-white" href="contact.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-inbound-fill span" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0"/>
+                      </svg> 
+                       Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <a href="login.html" class="btn btn-outline-warning ms-2 me-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16" style="vertical-align: text-bottom;">
+                  <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                  <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+              </svg> 
+              Login
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <main>
+        <!-- about page 1 -->
+         <div class="about-page1 pt-4">
+            <div class="container-fluid p-5 pb-5">
+                <div class="row row-gap-3">
+                  <div class="col-sm-10 col-md-6 border p-5">
+                    <h6 class="text-warning">Home Decor Hub</h6>
+                    <h2>Exceptional Furniture's For Indoor & Outdoor</h2>
+                    <p>Ut eleifend mattis ligula, porta finibus urna gravida at. Aenean vehicula sodales arcu non mattis. Integer dapibus ac dui pretium blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                  </div>
+                  <div class="col-sm-10 col-md-6">
+                    <img src="image/HomePage-Section-2-img1.jpg" alt="image" class="img img-fluid">
+                  </div>
+                  <!-- row 2 -->
+                  <div class="col-sm-10 col-md-6">
+                    <img src="image/HomePage-Section-2-img2.jpg" alt="image" class="img img-fluid">
+                  </div>
+                  <div class="col-sm-10 col-md-6 border p-5">
+                    <h2>Discover Endless Designs</h2>
+                    <p>Integer dapibus ac dui pretium blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut eleifend mattis ligula, porta finibus urna gravida at. Aenean vehicula sodales arcu non mattis.</p>
+                    <ol class="ol-list" style="background-color: transparent; color: white;">
+                        <li> At eleifend mattis ligula, porta finibus urna gvida at.</li>
+                        <li>Kenean vehicula sodales arcu non mattis.</li>
+                        <li>Ginteger dapibus ac dui pretium blanss aptent.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+         </div>
+
+         <section class="py-5 bg-secondary-subtle text-warning">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-12 text-center">
+                        <h3 class="span">Meet Our Team</h3>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img src="image/people-img1.jpg" class="rounded-circle mb-3" alt="Team Member">
+                        <h5>Name 1</h5>
+                        <p class="text-black">Founder & CEO</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/people-img1.jpg" class="rounded-circle mb-3" alt="Team Member">
+                        <h5>Name 2</h5>
+                        <p class="text-black">Lead Designer</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/people-img1.jpg" class="rounded-circle mb-3" alt="Team Member">
+                        <h5>Name 3</h5>
+                        <p class="text-black">Sales Manager</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+      <!-- footer  -->
+      <footer class="bg-dark text-light p-3 mt-5">
+        <div class="container">
+          <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4 mb-4">
+              <h5 class="text-warning">About Us</h5>
+              <p>
+                Discover our exclusive range of premium furniture designed for comfort and style. Your dream space is just a click away!
+              </p>
+            </div>
+      
+            <!-- Links Section -->
+            <div class="col-md-4 mb-4">
+              <h5 class="text-warning">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Collection</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Section -->
+            <div class="col-md-4 mb-4">
+              <h5 class="text-warning">Contact Us</h5>
+              <p><i class="bi bi-geo-alt"></i> furniture, Namakkal, Tamil Nadu</p>
+              <p><i class="bi bi-telephone"></i> +91 01234 56789</p>
+              <p><i class="bi bi-envelope"></i> furniture@furnitureshop.com</p>
+              <div>
+                <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="text-center ">
+            <p class="mb-0">&copy; 2024 Furniture Shop. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
