@@ -113,16 +113,16 @@
             <div class="col-md-3">
                 <div class="sidebar">
                     <h5 class="text-warning">Filter by Price</h5>
-                    <form class="text-white">
+                    <form class="text-white" id="price-filter-form">
                         <div class="mb-3">
                             <label for="minPrice" class="form-label">Min Price</label>
                             <input type="number" class="form-control" id="minPrice" placeholder="e.g. 100">
                         </div>
                         <div class="mb-3">
                             <label for="maxPrice" class="form-label">Max Price</label>
-                            <input type="number" class="form-control" id="maxPrice" placeholder="e.g. 1000">
+                            <input type="number" class="form-control" id="maxPrice" placeholder="e.g. 10000">
                         </div>
-                        <button type="submit" class="btn btn-outline-warning w-100">Apply Filter</button>
+                        <button type="submit" class="btn btn-outline-warning w-100" onclick="filterProducts()">Apply Filter</button>
                     </form>
                 </div>
             </div>
@@ -131,7 +131,7 @@
             <div class="col-md-9">
                 <div class="row">
                     <!-- Product Card 1 -->
-                    <div class="col-md-4 mb-4" id="card1">
+                    <div class="col-md-4 mb-4 product-card" data-price="2500">
                         <div class="card bg-black">
                             <img src="image/livingRoom-sofa-B-img-card.png" class="card-img-top " alt="Product 1">
                             <div class="card-body">
@@ -147,7 +147,7 @@
                         </div>
                     </div>
                     <!-- Product Card 2 -->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-4 product-card" data-price="399">
                         <div class="card bg-black">
                             <img src="image/soft-chair-Bimg.png" class="card-img-top " alt="Product 1">
                             <div class="card-body">
@@ -163,7 +163,7 @@
                         </div>
                     </div>
                     <!-- Product Card 3 -->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-4 product-card" data-price="799">
                         <div class="card bg-black">
                             <img src="image/table-Bimg-card.png" class="card-img-top " alt="Product 1">
                             <div class="card-body">
@@ -179,7 +179,7 @@
                         </div>
                     </div>
                     <!-- Product Card 4 -->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-4 product-card" data-price="1299">
                         <div class="card bg-black">
                             <img src="image/adjustable-chair-F-img-card.png" class="card-img-top " alt="Product 1">
                             <div class="card-body">
@@ -195,7 +195,7 @@
                         </div>
                     </div>
                     <!-- Product Card 5 -->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-4 product-card" data-price="599">
                         <div class="card bg-black">
                             <img src="image/round-table-img-B-card.png" class="card-img-top " alt="Product 1">
                             <div class="card-body">
@@ -211,7 +211,7 @@
                         </div>
                     </div>
                     <!-- Product Card 6 -->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-4 product-card" data-price="799">
                         <div class="card bg-black">
                             <img src="image/flower-vase-B-img-card.png" class="card-img-top " alt="Product 1">
                             <div class="card-body">
@@ -227,7 +227,7 @@
                         </div>
                     </div>
                     <!-- Product Card 7 -->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-4 product-card" data-price="2899">
                         <div class="card bg-black">
                             <img src="image/livingRoom-sofa-F-img-card.png" class="card-img-top " alt="Product 1">
                             <div class="card-body">
@@ -243,7 +243,7 @@
                         </div>
                     </div>
                     <!-- Product Card 8 -->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-4 product-card" data-price="1099">
                         <div class="card bg-black">
                             <img src="image/flower-vase-F-img-card.png" class="card-img-top " alt="Product 1">
                             <div class="card-body">
@@ -259,7 +259,7 @@
                         </div>
                     </div>
                     <!-- product card 9  -->
-                    <div class="col-md-4 mb-4 shadow" id="card9">
+                    <div class="col-md-4 mb-4 shadow product-card" data-price="2500">
                         <div class="card bg-black">
                             <img src="image/livingRoom-sofa-B-img-card.png" class="card-img-top " alt="Product 1">
                             <div class="card-body">
@@ -352,6 +352,25 @@
         console.log(count);
         let cnt = document.getElementById("Count");
         cnt.innerHTML = count;
+
+        function filterProducts() {
+        const minPrice = parseFloat(document.getElementById('minPrice').value) || 0;
+        const maxPrice = parseFloat(document.getElementById('maxPrice').value) || Infinity;
+
+        // Get all product cards
+        const productCards = document.querySelectorAll('.product-card');
+
+        productCards.forEach((card) => {
+            const price = parseFloat(card.getAttribute('data-price'));
+
+            // Show or hide the card based on the price filter
+            if (price >= minPrice && price <= maxPrice) {
+                card.style.display = 'block'; // Show the product
+            } else {
+                card.style.display = 'none'; // Hide the product
+            }
+        });
+    }
 
     </script>
     
