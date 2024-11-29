@@ -139,20 +139,31 @@
     <!-- login page -->
     <div class="mt-0">
         <div class="login-container">
-            <h2 class="text-warning">Login</h2>
+            <h2 class="text-warning">Sign Up</h2>
             <form>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email"  required>
+                    <label for="name" class="form-label">Name : </label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name"  required>
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
+                    <label for="email" class="form-label">Email Id : </label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email id"  required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Enter The Password : </label>
                     <input type="password" class="form-control" id="password" placeholder="Enter your password" minlength="5" maxlength="8" required>
                 </div>
-                <button type="submit" class="btn btn-outline-warning fw-bolder w-100" onclick="alert('Welcome back!!')">Login</button>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Conform Password : </label>
+                    <input type="password" class="form-control" id="password" placeholder="Re-Enter the password" minlength="5" maxlength="8" required>
+                </div>
+                <div class="mb-3">
+                    <p>By creating an account you agree to our <a href="#" class="span">Terms & Privacy.</a></p>
+                </div>
+                <button type="submit" class="btn btn-outline-warning fw-bolder w-100" onclick="alert('Welcome to Furnitures Shop!!')">Sign In</button>
             </form>
             <div class="text-center mt-3">
-                <p>Don't have an account ; <a href="signUp.html" class="span" >Sign up</a></p>
+                <p>I have an account ; <a href="login.html" class="span" >Log in</a></p>
             </div>
         </div>
     </div>
