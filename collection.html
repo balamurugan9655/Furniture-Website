@@ -327,6 +327,8 @@
       <script>
         let count = localStorage.getItem('count');
         function addToCart(name, price, image) {
+            var incCount = count++;
+
             const item = { name, price, image, quantity: 1 };
     
             // Retrieve the existing cart from localStorage or initialize it
@@ -347,9 +349,11 @@
     
             // Optionally, show a notification or update cart count
             alert(`${name} has been added to the cart!`);
+            // console.log(count);
+            let cnt = document.getElementById("Count");
+            cnt.innerHTML = count;
 
         }
-        console.log(count);
         let cnt = document.getElementById("Count");
         cnt.innerHTML = count;
 

@@ -127,7 +127,7 @@
                         <label for="message" class="form-label span">Message</label>
                         <textarea class="form-control" id="message" rows="5" placeholder="Type your message here" required></textarea>
                     </div>
-                    <button type="button" class="btn btn-outline-warning mb-md-5 rounded-5"> Send Message 
+                    <button type="button" class="btn btn-outline-warning mb-md-5 rounded-5" onclick="sendMessage()"> Send Message 
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
                             <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
                           </svg>
@@ -216,6 +216,14 @@
       let count = localStorage.getItem('count');
       let cnt = document.getElementById("Count");
       cnt.innerHTML = count;
+      
+      const sendMessage = () => 
+      {
+        let inputName = document.getElementById("name").value;
+        console.log(inputName);
+        alert(`Hai ${inputName} , Thank You For Your Message`);
+      }
+
     </script>
 
 </body>
